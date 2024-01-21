@@ -1,4 +1,7 @@
-{
+{(!process.env.NODE_URL) throw Error('Must export env var NODE_URL')
+         |                                  ^
+      17 | const url = process.env.NODE_URL
+      18
   "name": "sol2uml",
   "version": "2.5.20",
   "description": "Solidity contract visualisation tool.",
